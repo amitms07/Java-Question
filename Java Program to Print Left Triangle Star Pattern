@@ -1,0 +1,32 @@
+import java.io.*;
+
+// Java code to demonstrate left star triangle
+public class GeeksForGeeks {
+	// Function to demonstrate printing pattern
+	public static void StarRightTriangle(int n)
+	{
+		int a, b;
+
+		// outer loop to handle number of rows
+		// k in this case
+		for (a = n-1; a >=0; a--) {
+
+			// inner loop to handle number of columns
+			// values changing acc. to outer loop x
+			for (b = 0; b <= a; b++) {
+				// printing stars
+				System.out.print("* ");
+			}
+
+			// end-line
+			System.out.println();
+		}
+	}
+
+	// Driver Function
+	public static void main(String args[])
+	{
+		int k = 5;
+		StarRightTriangle(k);
+	}
+}
